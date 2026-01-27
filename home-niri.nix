@@ -11,7 +11,6 @@
     wlogout
     hyprlock
     pavucontrol
-    waybar
 
     # gnome portal required
     nautilus
@@ -47,11 +46,12 @@
     niri = {
       enableKeybinds = true;
       enableSpawn = true;
+      # includes.enable = false;
     };
   };
 
   # NIRI CONFIG
-  programs.niri.package = pkgs.niri;
+  programs.niri.package = inputs.nixpkgs.legacyPackages.x86_64-linux.niri;
   programs.niri.settings = {
     hotkey-overlay.skip-at-startup = true;
     prefer-no-csd = true;

@@ -8,12 +8,12 @@
 }:
 {
   # Niri specific services/settings (sys level)
-  nixpkgs.overlays = [
-    inputs.niri.overlays.niri
-  ];
+  # nixpkgs.overlays = [
+  #   inputs.niri.overlays.niri
+  # ];
   programs.niri = {
     enable = true;
-    package = pkgs.niri;
+    package = inputs.nixpkgs.legacyPackages.x86_64-linux.niri;
   };
 
   services.gnome.gnome-keyring.enable = true; # secret service
@@ -35,7 +35,7 @@
       xdg-desktop-portal-gtk
       xwayland-satellite
       libsecret
-      niri-stable
+      # niri-stable
       manix
 
       qt6Packages.qt5compat

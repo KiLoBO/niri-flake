@@ -9,6 +9,14 @@
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    catppuccin = {
+      url = "github:catppuccin/nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    stylix = {
+      url = "github:nix-community/stylix/release-25.11";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     niri = {
       url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -22,6 +30,8 @@
       nixpkgs,
       nixpkgs-unstable,
       home-manager,
+      catppuccin,
+      stylix,
       niri,
       ...
     }@inputs:
@@ -37,13 +47,15 @@
         };
 
         modules = [
-          {
-            nixpkgs.overlays = [
-              niri.overlays.niri
-            ];
-          }
+          # {
+          #   nixpkgs.overlays = [
+          #     niri.overlays.niri
+          #   ];
+          # }
           niri.nixosModules.niri
           nix-config.nixosModules.all-features
+          stylix.nixosModules.stylix
+          nix-config.nixosModules.catppuccin
           ./system-niri.nix
 
           home-manager.nixosModules.home-manager
@@ -59,6 +71,7 @@
                 nix-config.homeModules.base
                 nix-config.homeModules.dms-base
                 nix-config.dms.homeModules.niri
+                nix-config.homeModules.catppuccin
                 ./home-niri.nix
               ];
             };
