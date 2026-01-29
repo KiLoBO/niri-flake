@@ -287,20 +287,36 @@
       "inputs": {
         "dgop": "dgop",
         "dms": "dms",
+        "nix-monitor": "nix-monitor",
         "nixpkgs": "nixpkgs",
         "nixpkgs-unstable": "nixpkgs-unstable"
       },
       "locked": {
-        "lastModified": 1769476455,
-        "narHash": "sha256-Zmc4rSfTxHEwZuJ2UL/sr4ZW2owc1Tb794FSDjYAyfY=",
+        "lastModified": 1769728458,
+        "narHash": "sha256-5bnsskMlXjyXcZP0i/Thsk8/zqK934fHahdDOJuFWV4=",
         "owner": "KiLoBO",
         "repo": "nix-config",
-        "rev": "c4de6063cd667f2b1c338f0da94c26740d820357",
+        "rev": "c20399a12dd9e3ae5bcce43f9da1ec098ad35a28",
         "type": "github"
       },
       "original": {
         "owner": "KiLoBO",
         "repo": "nix-config",
+        "type": "github"
+      }
+    },
+    "nix-monitor": {
+      "locked": {
+        "lastModified": 1766244099,
+        "narHash": "sha256-PotQG3LnS8LsOnsHtyS5MFBw0qbRvr3886+3nzxL6R4=",
+        "owner": "antonjah",
+        "repo": "nix-monitor",
+        "rev": "bd941a0e71b8f7763b45c22281a44ff554f82666",
+        "type": "github"
+      },
+      "original": {
+        "owner": "antonjah",
+        "repo": "nix-monitor",
         "type": "github"
       }
     },
