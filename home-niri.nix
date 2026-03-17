@@ -7,6 +7,7 @@
 {
   home.packages = with pkgs; [
     swaybg
+    prismlauncher
     swaynotificationcenter
     wlogout
     hyprlock
