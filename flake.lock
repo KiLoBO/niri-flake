@@ -292,11 +292,11 @@
         "nixpkgs-unstable": "nixpkgs-unstable"
       },
       "locked": {
-        "lastModified": 1773764466,
-        "narHash": "sha256-6yTn8VrKOR4M1Ak4JCpVF2iNUW+a3cDKf7sV6EigI90=",
+        "lastModified": 1774327525,
+        "narHash": "sha256-53yzcFjZRAeHRQ1WW8UJcyg6u5sfPuMMv+1LMrINvZk=",
         "owner": "KiLoBO",
         "repo": "nix-config",
-        "rev": "7f684c7193fe0e790e2ffca2d8031055924e4ce5",
+        "rev": "66de96ac9a41cedb26183bd345fd5e37a0099e88",
         "type": "github"
       },
       "original": {
