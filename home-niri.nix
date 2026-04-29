@@ -94,7 +94,7 @@
         ];
       }
       # { command = ["swaync"]; }
-      { command = [ "hypridle" ]; }
+      # { command = [ "hypridle" ]; }
       {
         command = [
           "wl-paste"
