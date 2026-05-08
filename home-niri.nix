@@ -10,7 +10,7 @@
     prismlauncher
     swaynotificationcenter
     wlogout
-    hyprlock
+    # hyprlock
     pavucontrol
 
     # gnome portal required
