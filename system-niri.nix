@@ -18,7 +18,7 @@
 
   services.gnome.gnome-keyring.enable = true; # secret service
   programs.seahorse.enable = true;
-  services.hypridle.enable = true;
+  # services.hypridle.enable = true;
   security.pam.services.hyprlock = { };
   programs.dconf.enable = true;
   qt.enable = true;
