@@ -364,11 +364,11 @@
         "nixpkgs-unstable": "nixpkgs-unstable"
       },
       "locked": {
-        "lastModified": 1789794468,
-        "narHash": "sha256-K75qJFc9wSjf8mC8aUAFJp9lfrV4bBn/fp96EeZGNUY=",
+        "lastModified": 1789795316,
+        "narHash": "sha256-hlYpxKXgynMa/pu4k1IVeyNCxgDPoU0zSMtDCibS92I=",
         "owner": "KiLoBO",
         "repo": "nix-config",
-        "rev": "f5fe4532f4c6f0781e3ce6aa0d1c06eb726711f6",
+        "rev": "a835d54db43b309610131cd02d5aa25523b140e3",
         "type": "github"
       },
       "original": {
