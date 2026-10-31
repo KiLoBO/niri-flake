@@ -44,7 +44,7 @@
 
   # DMS
   programs.dank-material-shell = {
-    enable = false;
+    enable = true;
     niri = {
       enableKeybinds = true;
       enableSpawn = true;
@@ -54,7 +54,7 @@
 
   # Noctalia
   programs.noctalia = {
-    enable = true;
+    enable = false;
   };
 
   # NIRI CONFIG
