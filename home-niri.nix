@@ -44,11 +44,17 @@
 
   # DMS
   programs.dank-material-shell = {
+    enable = false;
     niri = {
       enableKeybinds = true;
       enableSpawn = true;
       # includes.enable = false;
     };
+  };
+
+  # Noctalia
+  programs.noctalia = {
+    enable = true;
   };
 
   # NIRI CONFIG
@@ -90,7 +96,7 @@
         command = [
           "swaybg"
           "-i"
-          "/home/david/gitProjects/nix-config/shared/wallpaper/spookyspillUpscaled.jpeg"
+          "/home/david/Pictures/wallpaper/spookyspillUpscaled.jpeg"
         ];
       }
       # { command = ["swaync"]; }
@@ -112,6 +118,7 @@
       #     "DankMaterialShell"
       #   ];
       # }
+      { command = [ "noctalia" ]; }
     ];
 
     input = {

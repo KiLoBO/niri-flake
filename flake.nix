@@ -2,8 +2,8 @@
   description = "Niri config";
 
   inputs = {
-    nix-config.url = "github:KiLoBO/nix-config";
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
+    nix-config.url = "github:KiLoBO/nix-config/dendritic-migration";
+    nixpkgs.follows = "nix-config/nixpkgs";
     home-manager = {
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -20,6 +20,14 @@
       url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    noctalia = {
+      url = "github:noctalia-dev/noctalia";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    dms = {
+      url = "github:AvengeMedia/DankMaterialShell/stable";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -29,6 +37,7 @@
       nixpkgs,
       home-manager,
       catppuccin,
+      noctalia,
       stylix,
       niri,
       ...
@@ -45,15 +54,9 @@
         };
 
         modules = [
-          # {
-          #   nixpkgs.overlays = [
-          #     niri.overlays.niri
-          #   ];
-          # }
           niri.nixosModules.niri
-          nix-config.nixosModules.all-features
+          nix-config.nixosModules.universal
           stylix.nixosModules.stylix
-          nix-config.nixosModules.catppuccin
           ./system-niri.nix
 
           home-manager.nixosModules.home-manager
@@ -66,10 +69,10 @@
             };
             home-manager.users.david = {
               imports = [
-                nix-config.homeModules.base
-                nix-config.homeModules.dms-base
-                nix-config.dms.homeModules.niri
-                nix-config.homeModules.catppuccin
+                nix-config.homeManagerModules.universal
+                nix-config.modules.homeManager.dms-base
+                nix-config.modules.homeManager.noctalia-base
+                inputs.dms.homeModules.niri
                 ./home-niri.nix
               ];
             };
