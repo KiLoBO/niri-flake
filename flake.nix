@@ -8,14 +8,6 @@
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    catppuccin = {
-      url = "github:catppuccin/nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    stylix = {
-      url = "github:nix-community/stylix/release-26.05";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     niri = {
       url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -36,9 +28,7 @@
       nix-config,
       nixpkgs,
       home-manager,
-      catppuccin,
       noctalia,
-      stylix,
       niri,
       ...
     }@inputs:
@@ -47,16 +37,11 @@
         system = "x86_64-linux";
         specialArgs = {
           inherit inputs;
-          pkgs-unstable = import inputs.nixpkgs-unstable {
-            system = "x86_64-linux";
-            config.allowUnfree = true;
-          };
         };
 
         modules = [
           niri.nixosModules.niri
           nix-config.nixosModules.universal
-          stylix.nixosModules.stylix
           ./system-niri.nix
 
           home-manager.nixosModules.home-manager
