@@ -460,16 +460,15 @@
         "stylix": "stylix"
       },
       "locked": {
-        "lastModified": 1793438518,
+        "lastModified": 1793584043,
         "narHash": "sha256-akFxTKeFyERd3NuvH9ZD+egOx3ibQ7Zp3z4E5irVXQ0=",
         "owner": "KiLoBO",
         "repo": "nix-config",
-        "rev": "65b197850902ec95bd4e3319b07fb8146e335a60",
+        "rev": "0372037cb97213439604931a8c773d2f0498fce3",
         "type": "github"
       },
       "original": {
         "owner": "KiLoBO",
-        "ref": "dendritic-migration",
         "repo": "nix-config",
         "type": "github"
       }

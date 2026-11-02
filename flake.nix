@@ -2,7 +2,7 @@
   description = "Niri config";
 
   inputs = {
-    nix-config.url = "github:KiLoBO/nix-config/dendritic-migration";
+    nix-config.url = "github:KiLoBO/nix-config";
     nixpkgs.follows = "nix-config/nixpkgs";
     home-manager = {
       url = "github:nix-community/home-manager/release-26.05";
