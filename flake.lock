@@ -348,6 +348,27 @@
         "type": "github"
       }
     },
+    "lightforge": {
+      "inputs": {
+        "nixpkgs": [
+          "nix-config",
+          "nixpkgs-unstable"
+        ]
+      },
+      "locked": {
+        "lastModified": 1793553145,
+        "narHash": "sha256-YLCXs35khL2bm40NdTwHHEgyIgqYmsr33UyeHcdCL4Y=",
+        "owner": "LightforgeProject",
+        "repo": "lightforge",
+        "rev": "7161221ec6757f6977e1b6b3ec38145c3aca285f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "LightforgeProject",
+        "repo": "lightforge",
+        "type": "github"
+      }
+    },
     "niri": {
       "inputs": {
         "niri-stable": "niri-stable",
@@ -413,6 +434,7 @@
         "flake-parts": "flake-parts",
         "helium": "helium",
         "import-tree": "import-tree",
+        "lightforge": "lightforge",
         "nix-monitor": "nix-monitor",
         "nixpkgs": "nixpkgs",
         "nixpkgs-unstable": "nixpkgs-unstable",
@@ -420,11 +442,11 @@
         "stylix": "stylix"
       },
       "locked": {
-        "lastModified": 1793584863,
-        "narHash": "sha256-iapdKunqM0UIR2TbZJd/z1vStrzqRsjeLF0E6BYhKNQ=",
+        "lastModified": 1793743818,
+        "narHash": "sha256-Wa5Nc9Eh6+OjabEfELVf4f3fseyJTIki0qCOcej5bo4=",
         "owner": "KiLoBO",
         "repo": "nix-config",
-        "rev": "58a5133d2f2b1b4b2765d6bb2f36a53c06ddb32f",
+        "rev": "383be253444171f32f4f41a4fa334d480e50df11",
         "type": "github"
       },
       "original": {
