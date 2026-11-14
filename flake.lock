@@ -442,11 +442,11 @@
         "stylix": "stylix"
       },
       "locked": {
-        "lastModified": 1793817193,
-        "narHash": "sha256-1HeO9j4h6bZo8uc1xp4OwWUsPh/40RW7DNbHKgY281c=",
+        "lastModified": 1794616294,
+        "narHash": "sha256-uCSyZ2hRghs69Qz3+OfzZtTBKALDWfAhhNw5xuH1btk=",
         "owner": "KiLoBO",
         "repo": "nix-config",
-        "rev": "ad85f27b0773694976f3273501e6bf9e6c465413",
+        "rev": "d5c5a63da966c961218dfd2fde7ec6df8f1b461b",
         "type": "github"
       },
       "original": {
